@@ -3,5 +3,18 @@ body{
 }
 
 .vs{
-    font-size: 150px;
+    font-size: 100px;
+}
+
+.square{
+    width: 30%;
+}
+
+.square-active{
+    background-color: gray;
+    width: 30%;
+}
+
+.winner, #game{
+    display: none;
 }

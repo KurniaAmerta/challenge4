@@ -48,33 +48,36 @@
                 <div class="col-md-4 align-self-center">
                     <center>
                         <h5>PLAYER 1</h5>
-                        <div>
-                            <img class="mt-5" src="public/img/batu.png" alt="buttonpng" width="30%" />
+                        <div class="square">
+                            <img class="mt-5" src="public/img/batu.png" alt="buttonpng" width="100%" onclick="Choose(this.parentElement, 0);"/>
                         </div>
-                        <div>
-                            <img class="mt-5" src="public/img/gunting.png" alt="buttonpng" width="30%" />
+                        <div class="square">
+                            <img class="mt-5" src="public/img/gunting.png" alt="buttonpng" width="100%" onclick="Choose(this.parentElement,1);"/>
                         </div>
-                        <div>
-                            <img class="mt-5" src="public/img/kertas.png" alt="buttonpng" width="30%" />
+                        <div class="square">
+                            <img class="mt-5" src="public/img/kertas.png" alt="buttonpng" width="100%" onclick="Choose(this.parentElement, 2);"/>
                         </div>
                     </center>
                 </div>
                 <div class="col-md-4 align-self-center">
                     <center>
-                        <h1 class="text-danger vs">VS</h1>
+                        <h1 class="text-danger vs" id="winner">VS</h1>
+                        <h1 class="text-white bg-success vs winner">COM WIN</h1>
+                        <h1 class="text-white bg-success vs winner">DRAW</h1>
+                        <h1 class="text-white bg-success vs winner">PLAYER 1 WIN</h1>
                     </center>
                 </div>
                 <div class="col-md-4 align-self-center">
                     <center>
                         <h5>COM</h5>
-                        <div>
-                            <img class="mt-5" src="public/img/batu.png" alt="buttonpng" width="30%" />
+                        <div class="square" id="com-0">
+                            <img class="mt-5" src="public/img/batu.png" alt="buttonpng" width="100%"/>
                         </div>
-                        <div>
-                            <img class="mt-5" src="public/img/gunting.png" alt="buttonpng" width="30%" />
+                        <div class="square" id="com-1">
+                            <img class="mt-5" src="public/img/gunting.png" alt="buttonpng" width="100%"/>
                         </div>
-                        <div>
-                            <img class="mt-5" src="public/img/kertas.png" alt="buttonpng" width="30%" />
+                        <div class="square" id="com-2">
+                            <img class="mt-5" src="public/img/kertas.png" alt="buttonpng" width="100%"/>
                         </div>
                     </center>
                 </div>
@@ -83,7 +86,7 @@
 
         <div class="mt-1">
             <center>
-                <img src="public/img/refresh.png" alt="buttonpng" width="5%" />
+                <img src="public/img/refresh.png" alt="buttonpng" width="5%" onclick="restart();"/>
             </center>
         </div>
     </div>
